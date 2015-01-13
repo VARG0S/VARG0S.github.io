@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Strip Card</title>
+  <meta name="description" content="sample strip card web app for entertainment purposes only">
+  <meta name="author" content="varg0s">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+        <h4>Strip Card</h4>
+
+              <!-- columns should be the immediate child of a .row -->
+              <div class="row">
+                <div class="twelve columns"><input type="text" onchange="showReveal()" id="team1" placeholder="Team 1" width="200px"/>
+                  <input type="number" id="score1" placeholder="Score"/></div>
+
+              </div>
+              <div class="row">
+                  <div class="six columns"><input type="text" onchange="showReveal()" id="team2" placeholder="Team 2" width="200px"/>
+                      <input type="number" id="score2" placeholder="Score" />
+                  </div>
+
+              </div>
+              <div class="row">
+                  <div class="twelve columns"><button type="button" class="button-primary" id="btnReveal" hidden="true" onclick="reveal()">R E V E A L</button></div>
+              </div>
+              <div class="row">
+                  <div class="one column" id="a"></div>
+                  <div class="five columns"><input type="text" onchange="showReveal()" id="aName" placeholder="Player 1"/></div>
+                  <div class="one column" id="b"></div>
+                  <div class="five columns"><input type="text" onchange="showReveal()" id="bName" placeholder="Player 2"/></div>
+              </div>
+              <div class="row">
+                  <div class="one column" id="c"></div>
+                  <div class="five columns"><input type="text" onchange="showReveal()" id="cName" placeholder="Player 3"/></div>
+                  <div class="one column" id="d"></div>
+                  <div class="five columns"><input type="text" onchange="showReveal()" id="dName" placeholder="Player 4"/></div>
+              </div>
+              <div class="row">
+                  <div class="one column" id="e"></div>
+                  <div class="five columns"><input type="text" onchange="showReveal()" id="eName" placeholder="Player 5"/></div>
+                  <div class="one column" id="f"></div>
+                  <div class="five columns"><input type="text" onchange="showReveal()" id="fName" placeholder="Player 6"/></div>
+              </div>
+              <div class="row">
+                  <div class="one column" id="g"></div>
+                  <div class="five columns"><input type="text" onchange="showReveal()" id="gName" placeholder="Player 7"/></div>
+                  <div class="one column" id="h"></div>
+                  <div class="five columns"><input type="text" onchange="showReveal()" id="hName" placeholder="Player 8"/></div>
+              </div>
+              <div class="row">
+                  <div class="one column" id="i"></div>
+                  <div class="five columns"><input type="text" onchange="showReveal()" id="iName" placeholder="Player 9"/></div>
+                  <div class="one column" id="j"></div>
+                  <div class="five columns"><input type="text" onchange="showReveal()" id="jName" placeholder="Player 10"/></div>
+              </div>
+      <h6>For entertainment purposes only. This site does not endorse or condone gambling, legal or otherwise.</h6>
+  </div>
+
+<script src="js.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
