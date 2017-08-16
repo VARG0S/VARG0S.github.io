@@ -34,7 +34,9 @@ function showWinner(){
 
 
 function winner(){
-    var total = +(document.getElementById("score1").value) +  +(document.getElementById("score2").value);
+    var myArray=[0,1,2,3,4,5,6,7,8,9];
+	var total = myArray[Math.floor(Math.random() * myArray.length)];
+    // var total = +(document.getElementById("score1").value) +  +(document.getElementById("score2").value);
     var l = total.toString().length;
     var lastDigit = total.toString()[l-1];
     var inputs = document.getElementsByClassName("score2");

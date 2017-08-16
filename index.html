@@ -5,8 +5,8 @@
     <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>Strip Card</title>
-    <meta name="description" content="sample strip card web app for entertainment purposes only">
+    <title>Candy Distributor</title>
+    <meta name="description" content="sample web app for distributing candy to new friends">
     <meta name="author" content="varg0s">
 
     <!-- Mobile Specific Metas
@@ -41,23 +41,23 @@
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
-    <h4>Strip Card</h4>
-    <p>Fill in all player names and then click the "Reveal" button.</p>
-    <p>After showing the numbers the teams and scores can be entered, after team names and scores are entered "Winner" can be clicked.</p>
+    <h4>Random Candy Distributor</h4>
+    <p>Add in all new friends and click the "Reveal" button.</p>
+    <p>After displaying the list of new friends, "Winner" can be clicked.</p>
     <!-- columns should be the immediate child of a .row -->
-    <h5 class="winner" hidden="true">Teams</h5>
-    <div class="row">
-        <div class="twelve columns">
-            <input type="text" class="main winner winnerInputs" onchange="showWinner()" id="team1" placeholder="Team 1" hidden="true"/>
-            <input type="number" id="score1" placeholder="Score" onchange="showWinner()" class="score winner winnerInputs" hidden="true"/>
-        </div>
-    </div>
-    <div class="row">
-        <div class="twelve columns">
-            <input type="text" class="main winner winnerInputs" onchange="showWinner()" id="team2" placeholder="Team 2" hidden="true"/>
-            <input type="number" id="score2" placeholder="Score" onchange="showWinner()" class="score winner winnerInputs" hidden="true"/>
-        </div>
-    </div>
+    <!--<h5 class="winner" hidden="true">Number</h5>-->
+    <!--<div class="row">-->
+        <!--<div class="twelve columns">-->
+            <!--<input type="text" class="main winner winnerInputs" onchange="showWinner()" id="team1" placeholder="Team 1" hidden="true"/>-->
+            <!--<input type="number" id="score1" placeholder="Score" onchange="showWinner()" class="score winner winnerInputs" hidden="true"/>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+        <!--<div class="twelve columns">-->
+            <!--<input type="text" class="main winner winnerInputs" onchange="showWinner()" id="team2" placeholder="Team 2" hidden="true"/>-->
+            <!--<input type="number" id="score2" placeholder="Score" onchange="showWinner()" class="score winner winnerInputs" hidden="true"/>-->
+        <!--</div>-->
+    <!--</div>-->
     <div class="row">
         <div class="twelve columns">
             <button type="button" class="button-primary" id="btnWinner" hidden="true" onclick="winner()">
@@ -129,11 +129,11 @@
     </div>
     <div class="row">
         <div class="twelve columns">
-            <button type="button" class="button-primary" id="btnReveal" hidden="true" onclick="reveal()">R E V E A L
+            <button type="button" class="button-primary" id="btnReveal" hidden="true" onclick="reveal(); showWinner()">R E V E A L
             </button>
         </div>
     </div>
-    <h6>For entertainment purposes only. This site does not endorse or condone gambling, legal or otherwise.</h6>
+    <!--<h6>For entertainment purposes only. This site does not endorse or condone gambling, legal or otherwise.</h6>-->
 </div>
 
 <script src="js.js"></script>
